@@ -22,7 +22,7 @@
 
         export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-6. Run terrafrom plan to make sure there are no errors in your configuration.
+6. Run terraform plan to make sure there are no errors in your configuration.
 
 
         terraform plan 
