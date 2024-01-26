@@ -137,3 +137,10 @@ resource "aws_instance" "palworld_server" {
     Name = "Palworld-Server"
   }
 }
+
+// Assign EC2 Instance an Elsatic IP
+
+resource "aws_eip" "palserver_eip" {
+  domain = "vpc"
+  instance = aws_instance.palworld_server.id
+}
