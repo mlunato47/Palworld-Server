@@ -262,11 +262,13 @@ You will see a couple of errors as it first starts up, but you can ignore these 
 
 2. To do this we will use a cron job that runs once a day to backup your files:
 
-    `crontab -e`
+        sudo crontab -e
 
-    Type the following to create the job
+    Type `1` and hit enter
 
-        0 0 * * * cp -r /home/steam/Steam/steamapps/common/PalServer/Pal/saved/* /home/steam/backups/
+    Copy the following to create the job
+
+        0 0 * * * sudo cp -r home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames/0/* /home/steam/backups/ >> /home/steam/cron_log.txt 2>&1
 
     This will backup the saves everyday at midnight
 
