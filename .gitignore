@@ -1,0 +1,9 @@
+# Ignore the .terraform directory in the main directory
+/.terraform/*
+
+# Ignore specific files in the main directory
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+vars.tf
+palworldserver
