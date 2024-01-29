@@ -268,7 +268,7 @@ You will see a couple of errors as it first starts up, but you can ignore these 
 
     Copy the following to create the job
 
-        0 0 * * * sudo cp -r home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames/0/* /home/steam/backups/ >> /home/steam/cron_log.txt 2>&1
+        0 0 * * * sudo rsync -azvv /home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames/0/ /home/steam/backups
 
     This will backup the saves everyday at midnight
 
