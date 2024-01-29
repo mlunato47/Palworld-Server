@@ -18,9 +18,9 @@
 
 5. Export your aws access keys as environment variables 
 
-        export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+        export AWS_ACCESS_KEY_ID=EXAMPLE
 
-        export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+        export AWS_SECRET_ACCESS_KEY=EXAMPLEKEY
 
 6. Run terraform plan to make sure there are no errors in your configuration.
 
